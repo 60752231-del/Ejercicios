@@ -7,3 +7,9 @@ n = int(input("Ingresa el número de término que quieres (n): "))
 an = a1 * (r ** (n - 1))
 
 print("El término número", n, "de la progresión geométrica es:", an)
+if (r != 1):
+    sn = a1 * (r ** (n-1)) / r - 1
+    print("La suma de terminos es:",sn)
+else:
+    sn = a1 * n
+    print("La suma de terminos es:",sn)
